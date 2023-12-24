@@ -12,5 +12,4 @@ app.listen(port, async () => {
 	log.info(`App Started on http://localhost:${port}`);
 	await connnectTODB();
 	routes(app);
-	console.log('this is for fun');
 });
