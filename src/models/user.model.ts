@@ -21,8 +21,7 @@ const userSchema = new Schema<userDocument>(
 		password: { type: String, required: true }
 	},
 	{
-		timestamps: true,
-		strict: true
+		timestamps: true
 	}
 );
 
