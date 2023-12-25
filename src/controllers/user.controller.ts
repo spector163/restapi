@@ -9,6 +9,6 @@ export async function createuserHandler(req: Request<{}, {}, createUserInput['bo
 		return res.send(user);
 	} catch (e: any) {
 		log.error(e);
-		return res.status(409).send(e.message);
+		return res.status(409).json({success:false,messge:e.message});
 	}
 }
