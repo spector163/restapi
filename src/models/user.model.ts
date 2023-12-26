@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import { Document, Schema, model } from 'mongoose';
 import config from 'config';
 import bcrypt from 'bcrypt';
 
