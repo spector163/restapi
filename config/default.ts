@@ -1,6 +1,6 @@
 export default {
 	port: 1337,
-	dbUri: 'mongodb://172.24.80.1:27017/restapi',
+	dbUri: 'mongodb://localhost:27017/restapi',
 	saltWorkFactor: 10,
 	accessTokenTtl: '1m',
 	refreshTokenTtl: '1y',

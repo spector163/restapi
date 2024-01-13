@@ -6,12 +6,12 @@ import { routes } from './routes';
 import { deserilizedUser } from './middleware/deserilizeUser';
 const port = config.get<number>('port');
 
-const app = express();
+const app = express();false
 app.use(express.json());
 app.use(deserilizedUser);
 
 app.listen(port, async () => {
-	log.info(`App Started on http://localhost:${port}`);
-	await connnectTODB();
-	routes(app);
+    log.info(`App Started on http://localhost:${port}`);
+    await connnectTODB();
+    routes(app);
 });
