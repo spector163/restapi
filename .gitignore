@@ -4,3 +4,4 @@ request.rest
 dist/
 private.key
 public.key
+config/
